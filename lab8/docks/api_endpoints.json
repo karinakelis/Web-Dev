@@ -1,0 +1,28 @@
+[
+    {
+      "endpoint": "/api/products",
+      "method": "GET",
+      "description": "Returns a list of all products"
+    },
+    {
+      "endpoint": "/api/products/<int:id>/",
+      "method": "GET",
+      "description": "Returns details of a specific product by ID"
+    },
+    {
+      "endpoint": "/api/categories/",
+      "method": "GET",
+      "description": "Returns a list of all categories"
+    },
+    {
+      "endpoint": "/api/categories/<int:id>/",
+      "method": "GET",
+      "description": "Returns details of a specific category by ID"
+    },
+    {
+      "endpoint": "/api/categories/<int:id>/products/",
+      "method": "GET",
+      "description": "Returns a list of products in the specified category"
+    }
+  ]
+  
