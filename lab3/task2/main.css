@@ -1,0 +1,357 @@
+<<<<<<< HEAD
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --light: #EEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: white;
+}
+
+header {
+    padding: 32px 16px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 16px;
+}
+
+#new-task-form {
+    display: flex;
+    gap: 12px;
+}
+
+#new-task-input {
+    flex: 1;
+    padding: 12px;
+    background-color: var(--darker);
+    border: none;
+    border-radius: 8px;
+    color: var(--light);
+    font-size: 18px;
+}
+
+#new-task-input::placeholder {
+    color: var(--grey);
+}
+
+#new-task-submit {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, var(--pink), var(--purple));
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+/* Task List */
+.task-list {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 16px;
+    background: var(--darker);
+    border-radius: 10px;
+}
+
+.task-list h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 16px;
+}
+
+#tasks .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.task .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.task .content {
+    flex: 1;
+}
+
+.task .text {
+    color: var(--light);
+    font-size: 18px;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.task .text:read-only {
+    cursor: default;
+}
+
+.task .text:not(:read-only) {
+    color: var(--pink);
+}
+
+.task .actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task .actions button {
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.task .actions .edit {
+    background: linear-gradient(to right, var(--pink), var(--purple));
+    background-clip: text;
+	-webkit-background-clip: text; 
+	-moz-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.task .actions .edit:hover {
+    opacity: 0.7;
+}
+
+
+.task .actions .delete {
+    background: crimson;
+    color: white;
+}
+
+.task .actions .delete:hover {
+    background: darkred;
+}
+
+
+.task .checkbox:checked + .content .text {
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+=======
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --light: #EEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: white;
+}
+
+header {
+    padding: 32px 16px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 16px;
+}
+
+#new-task-form {
+    display: flex;
+    gap: 12px;
+}
+
+#new-task-input {
+    flex: 1;
+    padding: 12px;
+    background-color: var(--darker);
+    border: none;
+    border-radius: 8px;
+    color: var(--light);
+    font-size: 18px;
+}
+
+#new-task-input::placeholder {
+    color: var(--grey);
+}
+
+#new-task-submit {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, var(--pink), var(--purple));
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+/* Task List */
+.task-list {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 16px;
+    background: var(--darker);
+    border-radius: 10px;
+}
+
+.task-list h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 16px;
+}
+
+#tasks .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.task .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.task .content {
+    flex: 1;
+}
+
+.task .text {
+    color: var(--light);
+    font-size: 18px;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.task .text:read-only {
+    cursor: default;
+}
+
+.task .text:not(:read-only) {
+    color: var(--pink);
+}
+
+.task .actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task .actions button {
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.task .actions .edit {
+    background: linear-gradient(to right, var(--pink), var(--purple));
+    background-clip: text;
+	-webkit-background-clip: text; 
+	-moz-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.task .actions .edit:hover {
+    opacity: 0.7;
+}
+
+
+.task .actions .delete {
+    background: crimson;
+    color: white;
+}
+
+.task .actions .delete:hover {
+    background: darkred;
+}
+
+
+.task .checkbox:checked + .content .text {
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+>>>>>>> 6d2d2be3f6a343624d8270e421f3c8e60e321e55

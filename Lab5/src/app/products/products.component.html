@@ -1,0 +1,16 @@
+<p>products works!</p>
+
+
+<div class="category-selector">
+    <button *ngFor="let category of categories" (click)="onCategoryChange(category)">
+      {{ category === 'all' ? 'All' : category }}
+    </button>
+  </div>
+  
+  <app-product-list
+    [products]="filteredProducts"
+    (like)="onLike($event)"
+    (remove)="onRemove($event)"
+    (shareWhatsApp)="shareOnWhatsApp($event)"
+    (shareTelegram)="shareOnTelegram($event)"
+  ></app-product-list>
