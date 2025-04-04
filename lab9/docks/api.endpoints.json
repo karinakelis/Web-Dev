@@ -1,0 +1,33 @@
+[
+    {
+      "endpoint": "/api/companies",
+      "method": "GET",
+      "description": "List all companies"
+    },
+    {
+      "endpoint": "/api/companies/<int:id>/",
+      "method": "GET",
+      "description": "Retrieve one company by ID"
+    },
+    {
+      "endpoint": "/api/companies/<int:id>/vacancies/",
+      "method": "GET",
+      "description": "List all vacancies related to a specific company"
+    },
+    {
+      "endpoint": "/api/vacancies/",
+      "method": "GET",
+      "description": "List all vacancies"
+    },
+    {
+      "endpoint": "/api/vacancies/<int:id>/",
+      "method": "GET",
+      "description": "Retrieve one vacancy by ID"
+    },
+    {
+      "endpoint": "/api/vacancies/top_ten/",
+      "method": "GET",
+      "description": "List top 10 vacancies sorted by highest salary"
+    }
+  ]
+  
